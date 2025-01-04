@@ -3,121 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+    <title>Tasks_html</title>
 </head>
+<style>
+    .web{
+        top: 500px;
+        left: 500px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .under{
+        float: left;
+    }
+
+    .under a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .under a:hover{
+        background-color: #111;
+    }
+
+    .skip-link {
+      top: -50px;
+      left: 0;
+      background: #0078d7;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+    
+    table,th,td{
+        border: 1px solid black;
+    }
+</style>
 <body>
-    <h3>login form</h3>
-    <form>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="Password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
-        <input type="submit" value="submit">
-
-    </form>
-    
-    <h3>image</h3>
-    <img src="https://v-extechsolution.in/static/media/react.c8eddbda4810db5719a0.png" width="300px">
-    <br>
-
-    <a href="https://v-extechsolution.in/static/media/react.c8eddbda4810db5719a0.png">click here</a>
-
-    <h3>sample data</h3>
-
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-        </tr>
-        <tr>
-            <td>Shivam</td>
-            <td>21</td>
-            <td>vadodara</td>
-        </tr>
-        <tr>
-            <td>divyang</td>
-            <td>21</td>
-            <td>vadodara</td>
-        </tr>
-        <tr>
-            <td>Parth</td>
-            <td>21</td>
-            <td>vadodara</td>
-        </tr>
-    </table>
-
-    <h3>List</h3>
-    <ul style="list-style-type: circle;">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
+    <!--task 1-->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav>
+    <ul class="web">
+        <li class="under"><a href="https://v-extechsolution.in/">Home</a></li>
+        <li class="under"><a href="https://v-extechsolution.in/learning/html/intro">HTML</a></li>
+        <li class="under"><a href="https://v-extechsolution.in/learning/css/intro">CSS</a></li>
+        <li class="under"><a href="https://v-extechsolution.in/learning/javascript/intro">JS</a></li>
+        <li class="under" style="float: right"><a href="https://v-extechsolution.in/about">ABOUT</a></li>
     </ul>
+    </nav>
+    <header>
+        <h1 style="color: brown;">Tasks</h1>
+        <h2 style="color: black;">task-1</h2>
+    </header>
+    <main id="main-content">
+        <article>
+          <h1>Understanding Web Development</h1>
+          <p>
+            Web development involves creating websites and applications for the internet. 
+            It includes aspects such as web design, web content development, client-side/server-side scripting, and network security.
+          </p>
+          <p>
+            Whether you're a beginner or an expert, the field of web development offers endless opportunities 
+            for creativity and problem-solving.
+          </p>
+        </article>
+        
+        <aside>
+          <h2>Related Topics</h2>
+          <ul>
+            <li><a href="https://v-extechsolution.in/learning/html/intro">HTML Basics</a></li>
+            <li><a href="https://v-extechsolution.in/learning/css/intro">CSS Styling</a></li>
+            <li><a href="https://v-extechsolution.in/learning/javascript/intro">JavaScript Programming</a></li>
+          </ul>
+        </aside>
+      </main>
 
-    <ol style="list-style-type: lower-alpha;">
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
+      <br><br>
+      
+    <p>welcome to <b><i>v-ex tech Solution.</i></b></p>
+    <p>we are providing internship for 8<sup>th</sup> sem students.</p>
+    <a href="https://v-extechsolution.in/" target="_blank">click here to reach v-ex tech solution</a><br>
+    <img src="/vimg.jpg" alt="please wait"></img>
+    <h3>favourite movies:</h3>
+    <ol>
+        <li>shang-chi</li>
+        <li>infinity war</li>
+        <li>end-game</li>
     </ol>
-
+    <h3>hobbies:</h3>
+    <ul>
+        <li>cricket</li>
+        <li>e-sports</li>
+        <li>kabaddi</li>
+    </ul>
+    <table>
+        <caption>Student Data</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll no.</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SP</td>
+                <td>21</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>AB</td>
+                <td>31</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>DD</td>
+                <td>41</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Entry Form</h2>
     <form>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname" value="John" maxlength="20"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe" max="20"><br>
-        <label for="date">Date:</label><br>
-        <input type="date" max="2024-12-31" min="2023-01-01" id="date" name="date"><br>
-        <label for="num">Enter a number:</label><br>
-        <input type="number" min="1" max="10" id="num" name="num"><br>
-        <label for="submit"submit></label><br>
-        <input type="submit" value="submit">
-    </form>
-
-    <h3>Form with diffrent input types</h3>
-    <form>
-        <label for="username">enter your username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">enter your password:</label><br>
-        <input type="password" id="password" name="password"><br>
-        <p>choose your gender:</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" aria-describedby="name-help">
+        <p id="name-help">Your name must be 2-10 characters long.</p>
+        <br>
+        <label for="color">Choose your favourite color:</label>
+        <select id="color" name="color">
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="pink">pink</option>
+            <option value="black">black</option>
+        </select><br>
+        <p>choose your gender:<p>
         <input type="radio" id="Male" name="gender" value="Male">
-        <label for="Male">Male</label><br>
+        <label for="Male" >Male</label><br>
         <input type="radio" id="Female" name="gender" value="Female">
-        <label for="Female">Female</label><br>
-        <input type="checkbox" id="terms and conditions" name="terms and conditions" value="terms and conditions">
-        <label for="terms and conditions">Terms and conditions</label><br>
-        <label for="Country">Choose a Country:</label>
-        <select id="Country" name="Country">
-            <option value="India">India</option>
-            <option value="UK">UK</option>
-            <option value="US">US</option>
-        </select>
-        <label for="submit">submit:</label><br>
-        <input type="submit" value="submit">
-
-        </form>
-
+        <label for="Female">Female</label><br><br>
+        <input type="submit" value="submit" aria-label="submit button">
         
-            <h3>welcome to latest video page</h3>
-        
-            <video height="200px" width="200px" autoplay controls>
-                <source src="bgv.mp4" type="video/mp4">
-            </video>
+    </form><br>
 
-            <h3>use of anchor tag</h3>
+    <video src="/bgv.mp4" autoplay controls width="500px" poster="fish.jpg"></video><br>
+    <audio src="/music.mp3" controls></audio><br>
 
-        <a href="https://v-extechsolution.in/" target="_blank">"Go to V-Ex Tech Solution"</a>
-    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-DNXmGtgwCo?si=6fyxdaw2ZXIJ8V9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+    <br>
+    <h3 style="text-decoration: underline;font-family: sans-serif;">SVG</h3>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red" />
+    </svg><br>
+
+
+    <footer>
+        <p>© Copyrights Reserved - V-Ex Tech 2023 .Software Solution.</p>
+        <p>~by Shivam</p>
+    </footer>
 </body>
 </html>
